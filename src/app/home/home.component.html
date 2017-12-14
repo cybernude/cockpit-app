@@ -1,0 +1,15 @@
+<clr-datagrid>
+    <clr-dg-column>UserName</clr-dg-column>
+    <clr-dg-column>ชื่อ</clr-dg-column>
+    <clr-dg-column>รหัสถานบริการ</clr-dg-column>
+    <clr-dg-column>ตำแหน่ง</clr-dg-column>
+
+    <clr-dg-row *ngFor="let user of alluser">
+        <clr-dg-cell>{{user.username}}</clr-dg-cell>
+        <clr-dg-cell>{{user.fname}}</clr-dg-cell>
+        <clr-dg-cell>{{user.office}}</clr-dg-cell>
+        <clr-dg-cell>{{user.post}}</clr-dg-cell>
+    </clr-dg-row>
+
+    <clr-dg-footer>{{alluser.length}} alluser</clr-dg-footer>
+</clr-datagrid>
